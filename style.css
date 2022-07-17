@@ -1,0 +1,62 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Indie+Flower&family=Rajdhani:wght@500&family=Rubik+Moonrocks&display=swap');
+@font-face {
+    font-family: 'Rajdhani';
+    src: url(https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Indie+Flower&family=Rubik+Moonrocks&display=swap);
+}
+#body{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+#title{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#title p{
+    font-family: 'Rajdhani';
+    font-size: 3em;
+    font-weight: 800;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+}
+#title span{
+    font-family: monospace;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+#btn-box{
+    display: flex;
+    justify-content: center;
+}
+#alphabets-boxes{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 185, 89);
+}
+table{
+    empty-cells: hide;
+}
+td{
+    border-radius: 50%;
+    border: 3px solid rgb(255, 0, 0);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: cursive;
+    cursor: pointer;
+}
+td:hover{
+    font-size: 2.4em;
+}
