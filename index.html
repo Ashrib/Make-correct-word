@@ -19,55 +19,73 @@
             <p>Make Correct Word</p>
             <span>Choose letters to make a word and check that it's Correct or not.</span>
         </div>
-        <div id="btn-box"><button onClick="startGame()">Let's do this</button></div>
+        <div id="btn-box"><button id="start-btn" onClick="startGame()">Let's Start</button></div>
         <div id="content">
             <div id="input-show">
                 <input type="text" id="user-input" readonly>
                 <button id="del-btn" onClick="del()">X</button>
             </div>
             <div id="alphabets-boxes">
-                <table>
-                    <tr>
-                        <td onClick="getValue('0')" id="0"></td>
-                        <td onClick="getValue('1')" id="1"></td>
-                        <td onClick="getValue('2')" id="2"></td>
-                        <td onClick="getValue('3')" id="3"></td>
-                        <td onClick="getValue('4')" id="4"></td>
-                        <td onClick="getValue('5')" id="5"></td>
-                    </tr>
-                    <tr>
-                        <td onClick="getValue('6')" id="6"></td>
-                        <td onClick="getValue('7')" id="7"></td>
-                        <td onClick="getValue('8')" id="8"></td>
-                        <td onClick="getValue('9')" id="9"></td>
-                        <td onClick="getValue('10')" id="10"></td>
-                        <td onClick="getValue('11')" id="11"></td>
-                    </tr>
-                    <tr>
-                        <td onClick="getValue('12')" id="12"></td>
-                        <td onClick="getValue('13')" id="13"></td>
-                        <td onClick="getValue('14')" id="14"></td>
-                        <td onClick="getValue('15')" id="15"></td>
-                        <td onClick="getValue('16')" id="16"></td>
-                        <td onClick="getValue('17')" id="17"></td>
-                    </tr>
-                    <tr>
-                        <td onClick="getValue('18')" id="18"></td>
-                        <td onClick="getValue('19')" id="19"></td>
-                        <td onClick="getValue('20')" id="20"></td>
-                        <td onClick="getValue('21')" id="21"></td>
-                        <td onClick="getValue('22')" id="22"></td>
-                        <td onClick="getValue('23')" id="23"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"></td>
-                        <td onClick="getValue('24')" id="24"></td>
-                        <td onClick="getValue('25')" id="25"></td>
-                        <td colspan="2"></td>
-                    </tr>
-                </table>
+                <!-- <div id="correct-words" class="scroll">
+                    <h4>Correct Words</h4>
+                    <ul></ul>
+                </div> -->
+                <div id="generated-letters">
+                    <table>
+                        <tr>
+                            <td onClick="getValue('0')" id="0"></td>
+                            <td onClick="getValue('1')" id="1"></td>
+                            <td onClick="getValue('2')" id="2"></td>
+                            <td onClick="getValue('3')" id="3"></td>
+                            <td onClick="getValue('4')" id="4"></td>
+                            <td onClick="getValue('5')" id="5"></td>
+                        </tr>
+                        <tr>
+                            <td onClick="getValue('6')" id="6"></td>
+                            <td onClick="getValue('7')" id="7"></td>
+                            <td onClick="getValue('8')" id="8"></td>
+                            <td onClick="getValue('9')" id="9"></td>
+                            <td onClick="getValue('10')" id="10"></td>
+                            <td onClick="getValue('11')" id="11"></td>
+                        </tr>
+                        <tr>
+                            <td onClick="getValue('12')" id="12"></td>
+                            <td onClick="getValue('13')" id="13"></td>
+                            <td onClick="getValue('14')" id="14"></td>
+                            <td onClick="getValue('15')" id="15"></td>
+                            <td onClick="getValue('16')" id="16"></td>
+                            <td onClick="getValue('17')" id="17"></td>
+                        </tr>
+                        <tr>
+                            <td onClick="getValue('18')" id="18"></td>
+                            <td onClick="getValue('19')" id="19"></td>
+                            <td onClick="getValue('20')" id="20"></td>
+                            <td onClick="getValue('21')" id="21"></td>
+                            <td onClick="getValue('22')" id="22"></td>
+                            <td onClick="getValue('23')" id="23"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td onClick="getValue('24')" id="24"></td>
+                            <td onClick="getValue('25')" id="25"></td>
+                            <td colspan="2"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <!-- <div id="wrong-words" class="scroll">
+                    <h4>Wrong Words</h4>
+                    <ul id="wrong-ul"></ul>
+                </div> -->
+            </div>
+            <div id="submit">
+                <button onClick="submit()" id="submit-btn">Submit</button>
+            </div>
+            <div id="score">
+                <h3>Your Score: <span id="points"></span></h3>
             </div>
         </div>
+        
 
     </div>
     <!-- body end -->

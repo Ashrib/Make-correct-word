@@ -1,4 +1,4 @@
-var toHide = document.getElementById("alphabets-boxes");
+var toHide = document.getElementById("content");
 toHide.style.display = "none";
 
 function startGame() {
@@ -19,8 +19,8 @@ function startGame() {
     };
 
     for(var g = 0; g <= boxes.length; g++) {
-        var vr = g;
-        document.getElementById(vr).innerText = randomLetters[g];
+        var getId = g;
+        document.getElementById(getId).innerText = randomLetters[g];
     };
 }
 
@@ -104,8 +104,32 @@ function getValue(x) {
             break;
         case "25" :
             getLetter += document.getElementById("25").innerText;
-            break; 
+            break;
     }
     var found = getLetter;
     document.getElementById("user-input").value = found;
+};
+function del() {
+    var getText = document.getElementById("user-input").value;
+    document.getElementById("user-input").value = getText.substring(0, getText.length-1);
+};
+function submit() {
+    var pointCount = 0;
+    var check_word = document.getElementById("user-input").value;
+    
+    if(check_word === "" || check_word.length<=1 || check_word.length>22) {
+        alert("Word should be greater than 1 or less than 23");
+    };
+
+    for(var v=0; v < Dictonery.length; v++) {
+        if(check_word === Dictonery[v]) {
+            pointCount ++;
+            document.getElementById("points").innerText = pointCount;
+            break;
+        }
+        else{
+            document.getElementById("wrong-ul").innerHTML = "<li>" + check_word + "</li>"
+        }
+    }
+    document.getElementById("user-input").value = "";
 }
