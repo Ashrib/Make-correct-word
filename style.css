@@ -38,6 +38,32 @@ body{
     display: flex;
     justify-content: center;
 }
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#input-show{
+    border: 1px solid red;
+    background-color: burlywood;
+    border-radius: 5px;
+}
+#user-input{
+    background-color: transparent;
+    height: 30px;
+    width: 380px;
+    border: none;
+    font-size: 1.2em;
+}
+#del-btn{
+    height: 35px;
+    font-weight: 800;
+    border: none;
+    background-color: red;
+    color: white;
+}
 #alphabets-boxes{
     display: flex;
     justify-content: center;
@@ -59,4 +85,5 @@ td{
 }
 td:hover{
     font-size: 2.4em;
+    background-color: rgb(255, 71, 71);
 }

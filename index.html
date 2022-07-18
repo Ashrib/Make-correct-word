@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Finlandica:ital@1&family=Indie+Flower&family=Rajdhani:wght@500;700&family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="body">
@@ -19,47 +20,53 @@
             <span>Choose letters to make a word and check that it's Correct or not.</span>
         </div>
         <div id="btn-box"><button onClick="startGame()">Let's do this</button></div>
-        <div id="alphabets-boxes">
-            <table>
-                <tr>
-                    <td onClick="getValue()" id="0"></td>
-                    <td onClick="getValue()" id="1"></td>
-                    <td onClick="getValue()" id="2"></td>
-                    <td onClick="getValue()" id="3"></td>
-                    <td onClick="getValue()" id="4"></td>
-                    <td onClick="getValue()" id="5"></td>
-                </tr>
-                <tr>
-                    <td onClick="getValue()" id="6"></td>
-                    <td onClick="getValue()" id="7"></td>
-                    <td onClick="getValue()" id="8"></td>
-                    <td onClick="getValue()" id="9"></td>
-                    <td onClick="getValue()" id="10"></td>
-                    <td onClick="getValue()" id="11"></td>
-                </tr>
-                <tr>
-                    <td onClick="getValue()" id="12"></td>
-                    <td onClick="getValue()" id="13"></td>
-                    <td onClick="getValue()" id="14"></td>
-                    <td onClick="getValue()" id="15"></td>
-                    <td onClick="getValue()" id="16"></td>
-                    <td onClick="getValue()" id="17"></td>
-                </tr>
-                <tr>
-                    <td onClick="getValue()" id="18"></td>
-                    <td onClick="getValue()" id="19"></td>
-                    <td onClick="getValue()" id="20"></td>
-                    <td onClick="getValue()" id="21"></td>
-                    <td onClick="getValue()" id="22"></td>
-                    <td onClick="getValue()" id="23"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"></td>
-                    <td onClick="getValue()" id="24"></td>
-                    <td onClick="getValue()" id="25"></td>
-                    <td colspan="2"></td>
-                </tr>
-            </table>
+        <div id="content">
+            <div id="input-show">
+                <input type="text" id="user-input" readonly>
+                <button id="del-btn" onClick="del()">X</button>
+            </div>
+            <div id="alphabets-boxes">
+                <table>
+                    <tr>
+                        <td onClick="getValue('0')" id="0"></td>
+                        <td onClick="getValue('1')" id="1"></td>
+                        <td onClick="getValue('2')" id="2"></td>
+                        <td onClick="getValue('3')" id="3"></td>
+                        <td onClick="getValue('4')" id="4"></td>
+                        <td onClick="getValue('5')" id="5"></td>
+                    </tr>
+                    <tr>
+                        <td onClick="getValue('6')" id="6"></td>
+                        <td onClick="getValue('7')" id="7"></td>
+                        <td onClick="getValue('8')" id="8"></td>
+                        <td onClick="getValue('9')" id="9"></td>
+                        <td onClick="getValue('10')" id="10"></td>
+                        <td onClick="getValue('11')" id="11"></td>
+                    </tr>
+                    <tr>
+                        <td onClick="getValue('12')" id="12"></td>
+                        <td onClick="getValue('13')" id="13"></td>
+                        <td onClick="getValue('14')" id="14"></td>
+                        <td onClick="getValue('15')" id="15"></td>
+                        <td onClick="getValue('16')" id="16"></td>
+                        <td onClick="getValue('17')" id="17"></td>
+                    </tr>
+                    <tr>
+                        <td onClick="getValue('18')" id="18"></td>
+                        <td onClick="getValue('19')" id="19"></td>
+                        <td onClick="getValue('20')" id="20"></td>
+                        <td onClick="getValue('21')" id="21"></td>
+                        <td onClick="getValue('22')" id="22"></td>
+                        <td onClick="getValue('23')" id="23"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td onClick="getValue('24')" id="24"></td>
+                        <td onClick="getValue('25')" id="25"></td>
+                        <td colspan="2"></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
     </div>
