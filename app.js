@@ -130,12 +130,17 @@ function submit() {
             }
             else{
                 alert("wrong");
-                document.getElementById("wrong-ul").innerHTML += "<li>" + check_word + "</li>"
+                document.getElementById("wrong-ul").innerHTML += "<li>" + check_word + "</li>";
                 break;
             }
         }
     };
-
-    
     document.getElementById("user-input").value = "";
+};
+var divWords = document.getElementById("alphabets-boxes");
+var divSubmit = document.getElementById("submit");
+function timer() {
+    divWords.style.display = "none";
+    divSubmit.style.display = "none";
 }
+setTimeout(timer, 5000);
